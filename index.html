@@ -220,6 +220,14 @@
   .book-divider { width:44px; height:1px; background: var(--dorado); opacity:.6; }
   .book-byline { font-size:9.5px; letter-spacing:2.4px; text-transform:uppercase; color: var(--gris-claro); }
 
+  .portada-img {
+    display: block;
+    padding: 0;
+    object-fit: cover;
+    box-shadow: 0 28px 60px rgba(0,0,0,.55);
+    border-radius: 4px;
+  }
+
   .formats-row { display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
   .format-pill {
     display:inline-flex; align-items:center; gap:9px;
@@ -376,12 +384,7 @@
 
     <div class="libro-grid">
       <div class="libro-visual reveal">
-        <div class="mini-book">
-          <span class="book-kicker">Transformación personal<br>Mentoría de vida</span>
-          <div class="book-title">CAUSA <span class="amp">&amp;</span><br>EFECTO</div>
-          <div class="book-divider"></div>
-          <span class="book-byline">El manual sin filtros</span>
-        </div>
+        <img src="portada.jpg" alt="Portada de CAUSA &amp; EFECTO, de Raúl M. Cánovas" class="mini-book portada-img">
         <div class="formats-row">
           <a href="https://www.amazon.es/dp/B0H5FS71XT" target="_blank" rel="noopener" class="format-pill">📱 <b>eBook</b> · 4,99€</a>
           <a href="https://www.amazon.es/dp/B0H5G7NLGY" target="_blank" rel="noopener" class="format-pill">📕 <b>Tapa blanda</b> · 19,99€</a>
