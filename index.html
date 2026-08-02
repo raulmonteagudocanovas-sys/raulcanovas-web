@@ -220,13 +220,16 @@
   .book-divider { width:44px; height:1px; background: var(--dorado); opacity:.6; }
   .book-byline { font-size:9.5px; letter-spacing:2.4px; text-transform:uppercase; color: var(--gris-claro); }
 
-  .portada-img {
-    display: block;
-    padding: 0;
-    object-fit: cover;
-    box-shadow: 0 28px 60px rgba(0,0,0,.55);
-    border-radius: 4px;
-  }
+  ..portada-img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1200 / 1920;
+  object-fit: cover;
+  border: 1px solid rgba(201,162,75,.34);
+  border-radius: 3px;
+  box-shadow: 0 28px 60px rgba(0,0,0,.55);
+}
 
   .formats-row { display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
   .format-pill {
@@ -384,7 +387,7 @@
 
     <div class="libro-grid">
       <div class="libro-visual">
-        <img src="portada.jpeg" alt="Portada de CAUSA &amp; EFECTO, de Raúl M. Cánovas" class="mini-book portada-img">
+        <img src="portada.jpeg" alt="Portada de CAUSA &amp; EFECTO, de Raúl M. Cánovas" class="portada-img">
         <div class="formats-row">
           <a href="https://www.amazon.es/dp/B0H5FS71XT" target="_blank" rel="noopener" class="format-pill">📱 <b>eBook</b> · 4,99€</a>
           <a href="https://www.amazon.es/dp/B0H5G7NLGY" target="_blank" rel="noopener" class="format-pill">📕 <b>Tapa blanda</b> · 19,99€</a>
