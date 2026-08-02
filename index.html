@@ -220,16 +220,16 @@
   .book-divider { width:44px; height:1px; background: var(--dorado); opacity:.6; }
   .book-byline { font-size:9.5px; letter-spacing:2.4px; text-transform:uppercase; color: var(--gris-claro); }
 
-  ..portada-img {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 1200 / 1920;
-  object-fit: cover;
-  border: 1px solid rgba(201,162,75,.34);
-  border-radius: 3px;
-  box-shadow: 0 28px 60px rgba(0,0,0,.55);
-}
+  .portada-img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1200 / 1920;
+    object-fit: cover;
+    border: 1px solid rgba(201,162,75,.34);
+    border-radius: 3px;
+    box-shadow: 0 28px 60px rgba(0,0,0,.55);
+  }
 
   .formats-row { display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
   .format-pill {
@@ -262,6 +262,19 @@
   }
   .credential-frame::before { content:''; position:absolute; inset:14px; border:1px solid rgba(201,162,75,.16); }
   .credential-text { text-align:center; padding:30px; font-size:11px; letter-spacing:2.2px; color: var(--gris); text-transform:uppercase; line-height:2.2; }
+
+  .autor-foto {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1023 / 1537;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 1px solid rgba(201,162,75,.3);
+    border-radius: 3px;
+    box-shadow: 0 24px 50px rgba(0,0,0,.5);
+  }
+
   .sobre-body p { font-size:14.5px; line-height:1.82; color: var(--gris-claro); margin-bottom:18px; }
   .quote-block { border-left:2px solid var(--dorado); padding-left:26px; margin:34px 0 0; }
   .quote-block p { font-family:'Cormorant Garamond', serif; font-style:italic; font-size:20px; line-height:1.52; color: var(--blanco); }
@@ -433,9 +446,7 @@
   <div class="section-inner">
     <div class="sobre-grid">
       <div class="reveal">
-        <div class="credential-frame">
-          <div class="credential-text">Raúl M. Cánovas<br>· Autor ·</div>
-        </div>
+        <img src="autor.jpeg" alt="Raúl M. Cánovas, autor de CAUSA & EFECTO" class="autor-foto">
       </div>
       <div class="reveal">
         <span class="eyebrow">Sobre mí</span>
